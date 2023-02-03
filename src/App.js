@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
 import { getusers } from "./redux/slices/userslices";
 import { UserCard } from "./components/UserCard";
 import ClipLoader from "react-spinners/ClipLoader";
@@ -10,12 +8,8 @@ function App() {
   const dispatch = useDispatch();
   const { loading, appErr, serverErr, usersList } = user;
   console.log(usersList);
-  // useEffect(() => {
-  //   dispatch(getusers());
-  // }, []);
   return (
     <div className="App">
-      {/*only row and column css are used from bootsrap for responsiveness rest all css are custom */}
       <div className="container">
         <nav className="navbar">
           Dev.space
