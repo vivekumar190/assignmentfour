@@ -4,8 +4,9 @@
 
 so i have created a reusable component for card in components folder
 i have written custom css for card
-after that in Root ie App.js
-their is main div with class 'App'
+also i have added a follow unfollow button to card so that card look good
+anmd then imported this Card Components inside App.js
+after that in Root ie App.js their is main div with class 'App'
 inside that i have used bootsrap Row And column for grid layout
 and responsiveness.
 once we fetch the data from api we can loop through userslist in this view
