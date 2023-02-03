@@ -1,38 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 .App {
   text-align: center;
+  background: #4e54c8;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.usercard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  gap: 12px;
+  font-family: "Exo", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  /* max-width: 300px; */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+.cardemail {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(83, 83, 83);
+  max-width: 400px;
+}
+.cardimage {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  font-family: "Exo", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  align-items: center;
+  /* justify-content: center; */
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.followbutton {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  background-color: #ffb428;
+  border-radius: 8px;
+  border: none;
 }
-
-.App-link {
-  color: #61dafb;
+.unfollowbutton {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0078e9;
+  border-radius: 8px;
+  border: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.fetchbuttoon {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0062be;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  font-size: 18px;
+}
+.heading {
+  font-size: 30px;
+  color: white;
+  font-family: "Exo", sans-serif;
+}
+@media (max-width: 768px) {
+  .App {
+    text-align: center;
+    background: #4e54c8;
+    height: auto;
   }
 }
