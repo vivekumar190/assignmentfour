@@ -3,7 +3,6 @@ import "../App.css";
 
 export const UserCard = ({ user }) => {
   const { avatar, email, first_name, last_name } = user;
-  console.log({});
   const [following, setFollowing] = useState(false);
   return (
     <div className="usercard">

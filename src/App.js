@@ -7,7 +7,6 @@ function App() {
   const user = useSelector((state) => state?.users);
   const dispatch = useDispatch();
   const { loading, appErr, serverErr, usersList } = user;
-  console.log(usersList);
   return (
     <div className="App">
       <div className="container">
